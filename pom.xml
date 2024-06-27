@@ -31,6 +31,7 @@
       <module>SpringMVC_FileUpload</module>
     <module>springMVCFileUpload</module>
     <module>SpringMVC_FileUpload</module>
+      <module>springbootUpload</module>
   </modules>
 
   <name>learn-java-bug</name>
