@@ -13,8 +13,6 @@ import java.io.IOException;
  *     <artifactId>org.apache.aries.transaction.jms</artifactId>
  *     <version>2.0.0</version>
  * </dependency>
- *
- * @author threedr3am
  */
 public class AriesJMSPoc {
 

@@ -4,8 +4,6 @@ import com.alibaba.fastjson.JSON;
 
 /**
  * 正则DOS Fastjson < 1.2.66
- *
- * @author threedr3am
  */
 public class ReDOSPoc {
 

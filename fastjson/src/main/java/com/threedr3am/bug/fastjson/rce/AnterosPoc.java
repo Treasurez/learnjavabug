@@ -26,8 +26,6 @@ import com.threedr3am.bug.common.server.LdapServer;
  *       <artifactId>Anteros-DBCP</artifactId>
  *       <version>1.0.1</version>
  *     </dependency>
- *
- * @author threedr3am
  */
 public class AnterosPoc {
   static {

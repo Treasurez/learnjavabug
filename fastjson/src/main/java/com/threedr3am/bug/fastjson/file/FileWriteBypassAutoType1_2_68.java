@@ -8,8 +8,7 @@ import java.io.IOException;
  * fastjson <= 1.2.68
  *
  * todo 貌似ASM对于JDK8和JDK11字节码的本地变量表会有点特殊的处理，使得没有无参构造方法也能被反射实例化
- *
- * @author threedr3am
+
  */
 public class FileWriteBypassAutoType1_2_68 {
 
