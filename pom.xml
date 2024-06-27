@@ -28,6 +28,8 @@
     <module>nexus</module>
     <module>apache-poi</module>
     <module>java-compile</module>
+      <module>SpringMVC_FileUpload</module>
+    <module>springMVCFileUpload</module>
   </modules>
 
   <name>learn-java-bug</name>
