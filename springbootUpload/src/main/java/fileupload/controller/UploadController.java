@@ -1,7 +1,8 @@
 package fileupload.controller;
 
 
-import com.example.fileupload.entiy.UploadFile;
+//import com.example.fileupload.entiy.UploadFile;
+import fileupload.entiy.UploadFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
