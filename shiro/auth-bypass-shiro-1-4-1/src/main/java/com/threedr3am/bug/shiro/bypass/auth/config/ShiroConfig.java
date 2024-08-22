@@ -1,6 +1,6 @@
 package com.threedr3am.bug.shiro.bypass.auth.config;
 
-import com.threedr3am.bug.shiro.bypass.auth.realm.MyRealm;
+import me.threedr3am.bug.shiro.bypass.auth.realm.MyRealm;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import org.apache.shiro.mgt.SecurityManager;

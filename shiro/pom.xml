@@ -17,6 +17,7 @@
     <module>auth-bypass-shiro-1-7-1</module>
     <module>auth-bypass-shiro-1-4-1</module>
     <module>auth-bypass-shiro-1-8-0</module>
+    <module>bypass-shiro</module>
   </modules>
 
 
