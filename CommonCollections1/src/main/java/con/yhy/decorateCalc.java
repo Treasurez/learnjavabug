@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class decorateCalc {
     public static void main(String[] args) throws Exception{
-        String calc = "open /System/Applications/Calculator.app/Contents/MacOS/Calculator";
+        String calc = "open -a Calculator";
 
         Runtime runtime = Runtime.getRuntime();
         InvokerTransformer invokerTransformer = new InvokerTransformer("exec"

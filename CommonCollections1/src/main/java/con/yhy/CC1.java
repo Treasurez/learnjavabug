@@ -32,7 +32,7 @@ public class CC1 {
                 new InvokerTransformer("invoke", new Class[]{Object.class, Object[].class},
                         new Object[]{null, null}),
                 new InvokerTransformer("exec", new Class[]{String.class},
-                        new Object[] {"/System/Applications/Calculator.app/Contents/MacOS/Calculator"}),
+                        new Object[] {"open -a Calculator"}),
         };
 
         Transformer transformerChain = new ChainedTransformer(transformers);

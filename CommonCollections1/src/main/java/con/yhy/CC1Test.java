@@ -8,11 +8,11 @@ import java.io.ObjectOutputStream;
 
 public class CC1Test {
     public static void main(String[] args) throws Exception {
-        String calc = "/System/Applications/Calculator.app/Contents/MacOS/Calculator";
+        String calc = "open -a Calculator";
         Runtime r = Runtime.getRuntime();
 //        Class c = Runtime.class;
 //        Method method = c.getMethod("exec", String.class);
-//        method.invoke(r,"/System/Applications/Calculator.app/Contents/MacOS/Calculator");
+//        method.invoke(r,"open -a Calculator");
 
 
         new InvokerTransformer("exec",new Class[]{String.class},new Object[]{calc}).transform(r);

