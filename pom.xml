@@ -33,6 +33,7 @@
     <module>SpringMVC_FileUpload</module>
       <module>springbootUpload</module>
     <module>JavaSerializeDemo/CommonCollections3</module>
+      <module>test</module>
   </modules>
 
   <name>learn-java-bug</name>
