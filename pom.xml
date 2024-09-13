@@ -34,6 +34,7 @@
       <module>springbootUpload</module>
     <module>JavaSerializeDemo/CommonCollections3</module>
       <module>test</module>
+    <module>SpEL</module>
   </modules>
 
   <name>learn-java-bug</name>
