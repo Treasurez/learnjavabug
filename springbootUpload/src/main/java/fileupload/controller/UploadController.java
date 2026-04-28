@@ -7,12 +7,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -25,6 +28,8 @@ import java.util.stream.Collectors;
 @Controller
 public class UploadController {
     private static final Logger LOGGER = LoggerFactory.getLogger(UploadController.class);
+    private static final String UPLOAD_DIR = "/Users/zhangzhaochao/work/java_work/MemoryHorse/springbootUpload/src/main/webapp/WEB-INF/views/";
+
 
     @GetMapping("/upload")
     public String upload() {
@@ -45,12 +50,12 @@ public class UploadController {
 
         String fileName = file.getOriginalFilename();
         System.out.println(fileName);
-        String filePath = "/Users/zhangzhaochao/work/java_work/MemoryHorse/springbootUpload/src/main/webapp/WEB-INF/views/";
+        String filePath = UPLOAD_DIR;
         File dest = new File(filePath + fileName);
         try {
             file.transferTo(dest);
             LOGGER.info("上传成功");
-            return "upload_success";
+            return "uploadsuccess";
         } catch (IOException e) {
             LOGGER.error(e.toString(), e);
         }
@@ -86,6 +91,15 @@ public class UploadController {
         }
 
         return true;
+    }
+
+    @GetMapping("/view/{filename}")
+    public void view(@PathVariable String filename, HttpServletResponse response) throws IOException {
+        File file = new File(UPLOAD_DIR, filename);
+        if (file.exists()) {
+            response.setContentType("application/octet-stream");
+            Files.copy(file.toPath(), response.getOutputStream());
+        }
     }
 
     @PostMapping("/uploadlist")
